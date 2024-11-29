@@ -18,11 +18,10 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 4. [UDP Scans](https://github.com/Deeptig9138/Nmap/tree/main/4.%20UDP%20Scans)
 5. [NULL, FIN, and Xmas Scans](https://github.com/Deeptig9138/Nmap/tree/main/5.%20NULL%2C%20FIN%20and%20Xmas)
 6. [ICMP Network Scanning](https://github.com/Deeptig9138/Nmap/tree/main/6.%20ICMP%20Network%20Scanning)
-7. [NSE Scripts Overview]()
-8. [Working with NSE Scripts]()
-9. [Searching for NSE Scripts]()
-10. [Firewall Evasion Techniques]()
-11. [Practicals]()
+7. [Working with NSE Scripts]()
+8. [Searching for NSE Scripts]()
+9. [Firewall Evasion Techniques]()
+   [Practicals]()
 
 ---
 
