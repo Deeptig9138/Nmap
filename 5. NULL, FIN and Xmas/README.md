@@ -1,15 +1,15 @@
 # 🎄 **Understanding NULL, FIN, and Xmas Scans with Nmap**  
-🚀 **Discover stealthy and uncommon TCP port scan techniques that bypass firewalls and reveal hidden services.**
+**Discover stealthy and uncommon TCP port scan techniques that bypass firewalls and reveal hidden services.**
 
 ---
 
 ## 🧩 **Overview**  
-NULL, FIN, and Xmas scans are unconventional TCP scan methods primarily designed for **stealth**. These scans exploit specific TCP behaviors defined by **RFC 793** to identify open, closed, and filtered ports.  
+NULL, FIN, and Xmas scans are unconventional TCP scan methods primarily designed for **stealth**. These scans exploit specific TCP behaviors defined by **RFC 9293 (RFC 793)** to identify open, closed, and filtered ports.  
 
-| **Scan Type**  | **Flags Set**                          | **Purpose**                             |
-|-----------------|----------------------------------------|-----------------------------------------|
-| 🔘 **NULL**    | No flags set                           | Sends a completely empty TCP packet.   |
-| 🚪 **FIN**     | FIN flag                               | Mimics a graceful connection closure.  |
+| **Scan Type**  | **Flags Set**                          | **Purpose**                                     |
+|----------------|----------------------------------------|-------------------------------------------------|
+| 🔘 **NULL**    | No flags set                           | Sends a completely empty TCP packet.           |
+| 🚪 **FIN**     | FIN flag                               | Mimics a graceful connection closure.          |
 | 🎄 **Xmas**    | FIN, PSH, URG (blinking like Xmas 🎅) | Sends a malformed packet resembling a lit tree. |
 
 ---
@@ -46,15 +46,6 @@ The flags make the packet look like a **blinking Christmas tree 🎄** in tools 
 
 ---
 
-## 🛠️ **Expected Port Responses**
-| **Port State**     | **Response**                                                                                   |
-|---------------------|-----------------------------------------------------------------------------------------------|
-| 🟢 **Open**        | No response, marked as `open|filtered`.                                                       |
-| 🔒 **Closed**      | `RST` TCP packet, marking the port as `closed`.                                               |
-| 🛡️ **Filtered**    | No response or ICMP unreachable packet, marked as `filtered`.                                 |
-
----
-
 ## ⚠️ **Challenges with These Scans**
 1. **Platform-Specific Behavior**:  
    - **Microsoft Windows** and some **Cisco devices** respond with `RST` to all malformed packets, showing all ports as `closed`.  
@@ -68,54 +59,64 @@ The flags make the packet look like a **blinking Christmas tree 🎄** in tools 
 ---
 
 ## 🎯 **Practical Example**
+
 ### **Command**  
-```bash
+```
 sudo nmap -sN -sF -sX -p 1-1000 <target_ip>
 ```
 
-Output
-plaintext
-Copy code
+### **Output**
+```
 Starting Nmap 7.93 ( https://nmap.org ) at 2024-11-29 16:00 UTC
 Nmap scan report for <target_ip>
 PORT      STATE           SERVICE
 22/tcp    open|filtered   ssh
 80/tcp    closed          http
 443/tcp   open|filtered   https
-🔓 Why Use These Scans?
-Firewall Evasion:
+```
+
+---
+
+## 🔓 Why Use These Scans?
+
+1. Firewall Evasion:
 Many firewalls drop packets with the SYN flag set. These scans avoid using SYN.
 
-Stealth:
+2. Stealth:
 Applications monitoring for connections often ignore packets without a full handshake.
 
-Quick Identification:
+3. Quick Identification:
 Useful for environments where stealth is crucial.
 
-🎄 Visualizing Xmas Scans
-Packet Capture (Wireshark View)
+---
 
-🧑‍💻 Advanced Tips
-Combine with Other Scans:
+## 🧑‍💻 Advanced Tips
+
+1. Combine with Other Scans:
 Pair with TCP or SYN scans for thorough enumeration.
-
-bash
-Copy code
+```
 sudo nmap -sS -sX -p 1-1000 <target_ip>
-Optimize Scan Speed:
-Use --top-ports to focus on the most commonly used ports.
+```
 
-bash
-Copy code
+2. Optimize Scan Speed:
+Use `--top-ports` to focus on the most commonly used ports.
+```
 nmap -sN --top-ports 100 <target_ip>
-Use --packet-trace for Debugging:
-Analyze how packets are being sent and responded to.
+```
 
-bash
-Copy code
+3. Use `--packet-trace` for Debugging:
+Analyze how packets are being sent and responded to.
+```
 nmap -sF --packet-trace <target_ip>
-📘 Further Reading
-Nmap Documentation
-RFC 793 (TCP Protocol)
-Wireshark Packet Analysis
+```
+
+---
+
+## 📘 Further Reading
+
+[RFC 793 (TCP Protocol)](https://datatracker.ietf.org/doc/html/rfc793#section-1.1)
+[Wireshark Packet Analysis](https://www.wireshark.org/docs/wsug_html_chunked/ChapterWork.html)
+
+---
+
 🔑 Master these scan techniques to uncover hidden services, bypass firewalls, and improve your network enumeration skills. Happy scanning! 🌟
