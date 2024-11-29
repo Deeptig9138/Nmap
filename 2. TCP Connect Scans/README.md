@@ -32,11 +32,7 @@ A **TCP Connect Scan** works by performing the **TCP three-way handshake** on ea
 
 ## 🖼️ **Visual Representation of TCP Connect Scan**
 
-### 🔍 **Open Port & Closed Port**
 ![Open & Closed Port](https://www.techtarget.com/rms/onlineImages/networking-tcp_port_scanning_mobile.png)
-
-### 🔒 **Filtered Port**
-![Filtered Port](https://www.keysight.com/blogs/en/tech/nwvs/2020/06/17/media_178367e973c1c575418e451f2904824393631c258.png?width=750&format=png&optimize=medium)
 
 ---
 
