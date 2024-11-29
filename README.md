@@ -21,7 +21,7 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 7. [Working with NSE Scripts]()
 8. [Searching for NSE Scripts]()
 9. [Firewall Evasion Techniques]()
-   [Practicals]()
+10. [Practicals]()
 
 ---
 
