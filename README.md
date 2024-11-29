@@ -16,7 +16,7 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 2. [TCP Connect Scans](https://github.com/Deeptig9138/Nmap/tree/main/2.%20TCP%20Connect%20Scans)
 3. [SYN Scans](https://github.com/Deeptig9138/Nmap/tree/main/3.%20SYN%20Scans)
 4. [UDP Scans](https://github.com/Deeptig9138/Nmap/tree/main/4.%20UDP%20Scans)
-5. [NULL, FIN, and Xmas Scans]()
+5. [NULL, FIN, and Xmas Scans](https://github.com/Deeptig9138/Nmap/tree/main/5.%20NULL%2C%20FIN%20and%20Xmas)
 6. [ICMP Network Scanning]()
 7. [NSE Scripts Overview]()
 8. [Working with NSE Scripts]()
