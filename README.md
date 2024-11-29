@@ -12,7 +12,7 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 ---
 
 ## 🚀 **Table of Contents**
-1. [Introduction](https://github.com/Deeptig9138/Nmap/tree/main/Introduction)
+1. [Introduction](https://github.com/Deeptig9138/Nmap/tree/main/1.%20Introduction)
 2. [Nmap Switches]()
 3. [Scan Types Overview]()
 4. [TCP Connect Scans]()
