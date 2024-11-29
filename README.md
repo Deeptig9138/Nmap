@@ -13,17 +13,16 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 
 ## 🚀 **Table of Contents**
 1. [Introduction](https://github.com/Deeptig9138/Nmap/tree/main/1.%20Introduction)
-2. [Nmap Switches]()
-3. [Scan Types Overview]()
-4. [TCP Connect Scans]()
-5. [SYN Scans]()
-6. [UDP Scans]()
-7. [NULL, FIN, and Xmas Scans]()
-8. [ICMP Network Scanning]()
-9. [NSE Scripts Overview]()
-10. [Working with NSE Scripts]()
-11. [Searching for NSE Scripts]()
-12. [Firewall Evasion Techniques]()
+2. [Scan Types Overview]()
+3. [TCP Connect Scans]()
+4. [SYN Scans]()
+5. [UDP Scans]()
+6. [NULL, FIN, and Xmas Scans]()
+7. [ICMP Network Scanning]()
+8. [NSE Scripts Overview]()
+9. [Working with NSE Scripts]()
+10. [Searching for NSE Scripts]()
+11. [Firewall Evasion Techniques]()
 
 ---
 
