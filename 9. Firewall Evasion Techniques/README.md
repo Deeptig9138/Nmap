@@ -82,6 +82,7 @@ nmap --badsum <target>
 
 🔍 Question:
 What Nmap switch would you use to bypass ICMP blocking?
+
  -f
  
  -Pn (correct answer)
