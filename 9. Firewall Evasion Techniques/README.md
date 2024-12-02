@@ -83,7 +83,9 @@ nmap --badsum <target>
 🔍 Question:
 What Nmap switch would you use to bypass ICMP blocking?
  -f
+ 
  -Pn (correct answer)
+ 
  --badsum
 
 ---
@@ -95,6 +97,7 @@ What Nmap switch would you use to bypass ICMP blocking?
 ---
 
 🚀 Let's Bypass Those Firewalls!
+
 Get hands-on with these commands and start mastering firewall evasion. Whether you’re scanning a local network or testing a hardened host, Nmap has the tools you need.
 
 🔥 Hack the Stack, Stay on Track! 🔥
