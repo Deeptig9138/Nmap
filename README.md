@@ -21,7 +21,8 @@ Welcome to the **Nmap Network Scanning**! This repository explores the capabilit
 7. [Working with NSE Scripts](https://github.com/Deeptig9138/Nmap/tree/main/7.%20Working%20with%20NSE%20Scripts)
 8. [Searching for NSE Scripts](https://github.com/Deeptig9138/Nmap/tree/main/8.%20Searching%20for%20NSE%20Scripts)
 9. [Firewall Evasion Techniques](https://github.com/Deeptig9138/Nmap/tree/main/9.%20Firewall%20Evasion%20Techniques)
-10. [Practicals]()
+
+[Practicals]()
 
 ---
 
